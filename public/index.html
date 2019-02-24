@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Todo List with Mongo Database">
+	<title>To-Do List</title>
+	<link href="styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+<body>
+ 	<nav id="navigation">
+ 		<span id="nav-name">
+			<span>To-Do List</span><br>
+			<span style="font-size: 16px;">Do your daily Do</span>		
+		</span>
+ 		<div id="nav-menu">
+ 			<span onclick="openNav()">Menu &#9776;</span>
+ 			<div id="nav-bar">
+ 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="#">Profile</a>
+				<a href="#">Acitvity Completion Lists</a>
+				<a href="#">Team Management</a>
+				<a href="#">History of Teams</a>		
+ 			</div>
+ 		</div>
+ 	</nav>
+ 	<main id="main">
+ 		<div id="top-div">
+ 			<p id="actName">Activity Name</p>
+ 		</div>
+ 		<div id="bottom-div">
+ 			<div id="bot-left-div">
+ 				<div id="Wtask-div">
+ 					<div>
+ 						<p class="p-txt">New Task Name <span id="task-add" onclick="openTask()"><i class="fa fa-plus-circle"></i></span></p>
+ 						<div class="modal" id="task-modal">
+							<div class="modal-content" >
+								<div class="modal-header">
+									<span class="close" onclick="closeTask()">&times;</span>
+									<h2>Add A New Task</h2>
+								</div>
+								<div class="modal-body">
+									<input type="text" placeholder="Add A New Task" id="taskn">
+									<button type="button" id="taskn-ok">Ok</button>
+								</div> 					
+							</div>
+ 						</div>
+ 						<hr>
+ 					</div>
+ 					<div>
+ 						<p class="p-txt">Task To Work On</p>
+ 						<hr>
+ 					</div>
+ 					<div>
+ 						<ul id="taskW-list"></ul>
+ 					</div> 					
+ 				</div>
+	 			<div id="Ctask-div">
+	 				<p class="p-txt">Task Completed Till Now</p>
+	 				<hr>
+	 				<ul id="taskC-list"></ul>
+	 			</div>
+	 		</div>
+	 		<div id="bot-right-div">
+ 				<div id="Ttask-div"> 
+ 					<p class="p-txt">Total Tasks For The Completeion Of The Project / Activity / Plan</p>
+ 					<hr>
+ 					<ul id="taskT-list">
+
+ 					</ul>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</main>
+	<script  src="https://code.jquery.com/jquery-3.3.1.js"  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  	crossorigin="anonymous"></script>
+	<script src="jqry.js"></script>
+	<script src="javascpt.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "todo_list",
+  "version": "1.0.0",
+  "description": "Database : MongoDB",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.13"
+  },
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KomeOn/ToDo_List.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KomeOn/ToDo_List/issues"
+  },
+  "homepage": "https://github.com/KomeOn/ToDo_List#readme"
+}
